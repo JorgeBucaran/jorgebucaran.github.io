@@ -29,11 +29,52 @@
   </script>
   <!-- Google Analytics -->
 
-  <meta http-equiv="refresh" content="0; URL=https://twitter.com/JorgeBucaran">
+  <meta http-equiv="refresh" content="1; URL=https://twitter.com/JorgeBucaran">
   <link rel="canonical" href="https://twitter.com/JorgeBucaran">
 
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1c2836;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 4em;
+      text-align: center;
+      letter-spacing: -.05em
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: fade 2s infinite;
+      background-image: linear-gradient(to top, #1c2836, #000);
+      z-index: -1;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+  </style>
 </head>
 
-<body></body>
+<body>
+  👋😄
+</body>
 
 </html>
