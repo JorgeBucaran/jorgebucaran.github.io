@@ -17,14 +17,14 @@
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-114294690-1"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "UA-114294690-1");</script>
     <script>
-        window.location.replace(
-            document.referrer == null ||
-                document.referrer === "https://github.com/jorgebucaran"
-                ? "https://twitter.com/jorgebucaran"
-                : "https://github.com/jorgebucaran"
-        );
+        alert(document.referrer)
+        window.location.replace("https://twitter.com/jorgebucaran")
+        if (document.referrer == null || document.referrer === "https://github.com/jorgebucaran") {
+
+        }
+
+
     </script>
-    <!-- 🤘😄🤘-->
 </head>
 
 </html>
