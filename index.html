@@ -2,29 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Jorge Bucaran" />
-    <meta name="description" content="Jorge Bucaran" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Jorge Bucaran" />
-    <meta property="og:url" content="https://jorgebucaran.com" />
-    <meta property="og:description" content="Jorge Bucaran" />
-    <meta property="og:image" content="https://jorgebucaran.com/jorgebucaran.jpg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@JorgeBucaran" />
-    <meta name="twitter:creator" content="@JorgeBucaran" />
-    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-114294690-1"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "UA-114294690-1");</script>
-    <script>
-        alert(document.referrer)
-        window.location.replace("https://twitter.com/jorgebucaran")
-        if (document.referrer == null || document.referrer === "https://github.com/jorgebucaran") {
-
-        }
-
-
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Jorge Bucaran" />
+  <meta name="description" content="Jorge Bucaran" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jorge Bucaran" />
+  <meta property="og:url" content="https://jorgebucaran.com" />
+  <meta property="og:description" content="Jorge Bucaran" />
+  <meta property="og:image" content="https://jorgebucaran.com/jorgebucaran.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@JorgeBucaran" />
+  <meta name="twitter:creator" content="@JorgeBucaran" />
+  <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-114294690-1"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "UA-114294690-1");</script>
+  <script>
+    window.location.replace(
+      document.referrer == null || document.referrer === "https://github.com/"
+        ? "https://twitter.com/jorgebucaran"
+        : "https://github.com/jorgebucaran"
+    );
+  </script>
 </head>
 
 </html>
