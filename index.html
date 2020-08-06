@@ -27,5 +27,14 @@
         ["config", "UA-114294690-1"],
       ]
     </script>
+    <script>
+      window.location.replace(
+        `https://${
+          document.referrer.match(/https:\/\/github/) == null
+            ? "twitter"
+            : "github"
+        }.com/jorgebucaran`
+      )
+    </script>
   </head>
 </html>
