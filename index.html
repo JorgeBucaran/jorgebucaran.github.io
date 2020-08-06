@@ -14,8 +14,8 @@
       content="https://jorgebucaran.com/jorgebucaran.jpg"
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@JorgeBucaran" />
-    <meta name="twitter:creator" content="@JorgeBucaran" />
+    <meta name="twitter:site" content="@jorgebucaran" />
+    <meta name="twitter:creator" content="@jorgebucaran" />
     <script
       type="text/javascript"
       async
@@ -28,14 +28,11 @@
       ]
     </script>
     <script>
-      console.log(
+      window.location.replace(
         `https://${
-          document.referrer.indexOf("https://github.com") >= 0
-            ? "twitter"
-            : "github"
+          document.referrer.indexOf("https://github") ? "github" : "twitter"
         }.com/jorgebucaran`
       )
-      // window.location.replace("https://github.com/jorgebucaran")
     </script>
   </head>
 </html>
