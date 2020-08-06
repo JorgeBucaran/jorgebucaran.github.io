@@ -28,6 +28,16 @@
       ]
     </script>
     <script>
+      console.log(
+        "LOG",
+        document,
+        document.referrer,
+        `https://${
+          document.referrer.match(/https:\/\/github/) == null
+            ? "twitter"
+            : "github"
+        }.com/jorgebucaran`
+      )
       window.location.replace("https://github.com/jorgebucaran")
     </script>
   </head>
