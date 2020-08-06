@@ -29,14 +29,10 @@
     </script>
     <script>
       console.log(
-        "LOG",
-        document,
-        `ref:${document.referrer}`,
-        `url: https://${
-          document.referrer.indexOf("https://t.co") >= 0 ||
-          document.referrer.indexOf("https://github.com") < 0
-            ? "github"
-            : "twitter"
+        `https://${
+          document.referrer.indexOf("https://github.com") >= 0
+            ? "twitter"
+            : "github"
         }.com/jorgebucaran`
       )
       // window.location.replace("https://github.com/jorgebucaran")
