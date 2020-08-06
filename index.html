@@ -31,14 +31,15 @@
       console.log(
         "LOG",
         document,
-        document.referrer,
-        `https://${
-          document.referrer.match(/https:\/\/github/) == null
-            ? "twitter"
-            : "github"
+        `ref:${document.referrer}`,
+        `url: https://${
+          document.referrer.indexOf("https://t.co") >= 0 ||
+          document.referrer.indexOf("https://github.com") < 0
+            ? "github"
+            : "twitter"
         }.com/jorgebucaran`
       )
-      //window.location.replace("https://github.com/jorgebucaran")
+      window.location.replace("https://github.com/jorgebucaran")
     </script>
   </head>
 </html>
